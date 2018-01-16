@@ -1,0 +1,90 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Inger Hair at Home at Aix en Provence
+email: flamant@club-internet.fr
+description: #>- # this means to ignore newlines until "baseurl:"
+  This site is intended to introduce the activity of hair at home of Inger at Aix en Provence.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://localhost" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "" # the subpath of your site, e.g. /blog
+#url: "https://flamant.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  flamant
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - Inger-Analytics-feb0aa8b73d1.json
+  - .gitignore
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      lang: fr
+   
+# Source language is optional. If set, translations to it will not be
+# performed.
+#source_lang: en
+translations:
+  en:
+    callTheNumber: Contact me at
+    sendmeAMail: Send me a mail
+    clickHere: (click here)
+    ingerHairStylingAtHome: INGER HAIRSTYLING SERVICE AT HOME
+    home: HOME
+    whoIAm: WHO I AM
+    tariffs2018: TARIFFS 2018
+    coveredMunicipalities: COVERED MUNICIPALITIES
+    facebook: facebook
+    phoneicon: phone icon
+    homeicon: home icon
+    arobasicon: arobas icon 
+    logo: logo
+  fr:
+    callTheNumber: Appelez moi au
+    sendmeAMail: Envoyez moi un mail
+    clickHere: (cliquez ici)
+    ingerHairStylingAtHome: INGER COIFFURE A DOMICILE
+    home: ACCUEIL
+    whoIAm: QUI SUIS-JE
+    tariffs2018: TARIFS 2018
+    coveredMunicipalities: LES COMMUNES DESSERVIES
+    facebook: facebook
+    phoneicon: icone de téléphone
+    homeicon: icone de domicile
+    arobasicon: icone arobase
+    logo: logo
+ 
+telephone-number: 0618231676
+adress: 4 square Edouard Peisson, 13090 Aix en provence
+email: inger.philippe@gmail.com 
+menuClass: navigation

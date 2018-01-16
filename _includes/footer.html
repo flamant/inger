@@ -1,0 +1,22 @@
+			</div><!-- /.container -->
+			<footer>
+                This is the footer
+			</footer>
+		</body>
+<script>
+function setActive() {
+  var aObj = document.getElementsByClassName("{{site.menuClass}}")[0].getElementsByTagName('a');
+  for(i=0;i<aObj.length;i++) {
+    if(document.location.href.indexOf(aObj[i].href)>=0) {
+      aObj[i].className='active';
+    }
+  }
+}
+window.onload = setActive;
+</script>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+{% if page.path contains '_posts' %}
+  <link rel="amphtml" href="https://localhost::4000/inger/toto.html">
+{% endif %}
+</html>
+<!-- {{ page.id | prepend: '/inger' | prepend: site.baseurl | prepend: site.url | append: '.html' }} -->
