@@ -29,9 +29,6 @@ GEM
     jekyll-i18n_tags (1.0.0)
     jekyll-maps (2.0.4)
       jekyll (~> 3.0)
-    jekyll-paginate (1.1.0)
-    jekyll-rss (1.0.0alpha7)
-      jekyll-paginate (~> 1.0)
     jekyll-sass-converter (1.5.1)
       sass (~> 3.4)
     jekyll-sitemap (1.1.1)
@@ -76,7 +73,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-i18n_tags (~> 1)
   jekyll-maps
-  jekyll-rss
   jekyll-sitemap
   minima (~> 2.0)
   tzinfo-data

@@ -16,17 +16,17 @@
 		<body>
             <div class="top-panel-contact-info">
                 <div class="info-block" >
-                    <amp-img max-width="92" width="16" height="16" alt="{% t phoneicon %}" scr="{{site.url}}{{site.baseurl}}/assets/images/icons/Phone_number-16px-16px.png" layout="responsive" /></amp-img> {% t callTheNumber %} {{site.telephone-number}}
+                    <amp-img max-width="92" width="16" height="16" alt="{% t phoneicon %}" src="{{site.url}}{{site.baseurl}}/assets/images/icons/Phone_number-16px-16px.png" layout="responsive" /></amp-img> {% t callTheNumber %} {{site.telephone-number}}
                 </div>
                 <div class="info-block" >
-                    <amp-img width="16" height="16" alt="{% t homeicon %}" scr="{{site.url}}{{site.baseurl}}/assets/images/icons/Home-16px-16px.png" layout="responsive"></amp-img> {{site.adress}}
+                    <amp-img width="16" height="16" alt="{% t homeicon %}" src="{{site.url}}{{site.baseurl}}/assets/images/icons/Home-16px-16px.png" layout="responsive"></amp-img> {{site.adress}}
                 </div>
                 <div class="info-block" >
-                    <amp-img width="16" height="16" alt="{% t arobasicon %}" scr="{{site.url}}{{site.baseurl}}/assets/images/icons/Email-16px-16px.png" layout="responsive" ></amp-img> {% t sendmeAMail %} <a href="mailto:{{ site.email | encode_email }}" title="Contact me">{% t clickHere %}</a>
+                    <amp-img width="16" height="16" alt="{% t arobasicon %}" src="{{site.url}}{{site.baseurl}}/assets/images/icons/Email-16px-16px.png" layout="responsive" ></amp-img> {% t sendmeAMail %} <a href="mailto:{{ site.email | encode_email }}" title="Contact me">{% t clickHere %}</a>
                 </div>                
             </div>
             <div class="headband">
-                <amp-img width="250" height="210" alt="{% t logo %}" scr="{{ 'assets/images/logo/Cadre-Logo-Inger-250px-210px-72ppi.png | absolute_url }}" layout="responsive"></amp-img><span class="header-title" >{% t ingerHairStylingAtHome %}</span>
+                <amp-img width="250" height="210" alt="{% t logo %}" src="{{ 'assets/images/logo/Cadre-Logo-Inger-250px-210px-72ppi.png' | absolute_url }}" layout="responsive"></amp-img><span class="header-title" >{% t ingerHairStylingAtHome %}</span>
             </div>
 			<nav class="{{site.menuClass}}">
 	    		<ul>
