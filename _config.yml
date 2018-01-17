@@ -18,7 +18,14 @@ email: flamant@club-internet.fr
 description: #>- # this means to ignore newlines until "baseurl:"
   This site is intended to introduce the activity of hair at home of Inger at Aix en Provence.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://localhost" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Setting url to localhost, would break a lot of things in production.
+# Unless you have very specific requirements, I would suggest to use either
+# relative path to assets, eq. images, icons, stylesheets, scripts and whatnot.
+# Give it a try, you might actually like it :-)
+
+# url: "https://localhost" # the base hostname & protocol for your site, e.g. http://example.com
+
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "https://flamant.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
@@ -29,6 +36,28 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+
+# NOTES:
+#   Tracking will be disabled in development mode (JEKYLL_ENV=development).
+#   To enable production mode set enviroment variable JEKYLL_ENV=production.
+#   Github pages automatically sets JEKYLL_ENV to production. For testing use
+#     JEKYLL_ENV=production jekyll serve
+#   or
+#     JEKYLL_ENV=development jekyll serve
+
+# Settings for jekyll_analytics - as in production mode you MUST have something configured,
+# otherwise the plugin will throw an error.
+jekyll_analytics:
+  GoogleAnalytics:          # Add, if you want to track with Google Analytics
+    id: UA-123-456          # Required - replace with your tracking id
+    anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
+
+  # Piwik:                    # Add, if you want to track with Piwik
+  #   url: piwik.example.com  # Required - url to piwik installation without trailing /
+  #   siteId: "1234"          # Required - replace with your piwik site id (Write id as string)
+
+  # MPulse:                   # Add if you want to track performance with mPulse
+  #   apikey: XXXXX-YYYYY-ZZZZZ-AAAAA-23456   # Required - replace with your mPulse API key
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
